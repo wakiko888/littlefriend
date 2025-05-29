@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("littlefriend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2418ef441f012eae91025f149793d0bb99650ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("littlefriend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("littlefriend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
