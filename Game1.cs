@@ -8,10 +8,12 @@ namespace littlefriend;
 public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
-    private SpriteBatch fond;
+    private SpriteBatch _spriteBatch;
+    private Texture2D _9_16_bleue;
 
     public Game1()
     {
+        Window.AllowUserResizing = false;
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
@@ -25,8 +27,8 @@ public class Game1 : Game
 
     protected override void LoadContent()
     {
-        fond = new SpriteBatch(GraphicsDevice);
-
+        _spriteBatch = new SpriteBatch(GraphicsDevice);
+        _9_16_bleue = Content.Load<Texture2D>("9_16_bleue");
         // TODO: use this.Content to load your game content here
     }
 
@@ -43,9 +45,10 @@ public class Game1 : Game
     protected override void Draw(GameTime gameTime)
     {
         GraphicsDevice.Clear(Color.CornflowerBlue);
-
+        _spriteBatch.Begin();
+        _spriteBatch.Draw(_9_16_bleue, new Rectangle(100, 100, 90, 160), Color.White);
         // TODO: Add your drawing code here
-
+        _spriteBatch.End();
         base.Draw(gameTime);
     }
 }
